@@ -1,60 +1,86 @@
 ! <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hussain Wali</title>
-<!--         <link rel="stylesheet" href="/css/main.css"> -->
+    <!--         <link rel="stylesheet" href="/css/main.css"> -->
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    
-</head>
-<body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3> Welcome to my Portfolio Page </h3>
-            </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3>Welcome to my Portfolio Page</h3>
         </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-12">
-                <h4>I will be adding all my work here. </h4>
-            </div>
-            <br>
-            <hr>
-            <h3>Javascript Solutions</h3>
-            <h4>Problem 1: Return array of largest numbers from subArrays in an Array (below is description of the problem statement) : </h4>
-            <p>Return an array consisting of the largest number from each provided sub-array. For simplicity, the provided array will contain exactly 4 sub-arrays.
-                Remember, you can iterate through an array with a simple for loop, and access each member with array syntax arr[i].
-            </p>
-            <p>Test Cases: </p>
-            <p>largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]) should return an array. </p>
-
-<p>largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]) should return [27, 5, 39, 1001].</p>
-
-<p>largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]) should return [9, 35, 97, 1000000].</p>
-
-<p>largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]]) should return [25, 48, 21, -3].</p>
-                <hr><br>
-            <h4>Solution#1 to Problem 1</h4>
-            
-            <code>
-                function largestOfFour(arr) { <br>
-                let largest_arr = []; <br>
-                for(let i=0;i<4;i++){<br>
-                  largest_arr.push(Math.max(...arr[i])); <br>
-                }<br>
-<br>
-                  return largest_arr;<br>
-                }<br>
-<br>
-                largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]]);<br>
-<br>
-
-
-                </code>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <h4>I will be adding all my work here.</h4>
         </div>
+        <br />
+        <hr />
+        <div class="col-md-12">
+          <h3>Javascript Solutions</h3>
+          <h4>
+            Problem 1: Return array of largest numbers from subArrays in an
+            Array (below is description of the problem statement) :
+          </h4>
+          <p>
+            Return an array consisting of the largest number from each provided
+            sub-array. For simplicity, the provided array will contain exactly 4
+            sub-arrays. Remember, you can iterate through an array with a simple
+            for loop, and access each member with array syntax arr[i].
+          </p>
+          <p>Test Cases:</p>
+          <p>
+            largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39],
+            [1000, 1001, 857, 1]]) should return an array.
+          </p>
+
+          <p>
+            largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39],
+            [1000, 1001, 857, 1]]) should return [27, 5, 39, 1001].
+          </p>
+
+          <p>
+            largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39],
+            [1000000, 1001, 857, 1]]) should return [9, 35, 97, 1000000].
+          </p>
+
+          <p>
+            largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21],
+            [-72, -3, -17, -10]]) should return [25, 48, 21, -3].
+          </p>
+        </div>
+        <hr />
+        <br />
+        <div class="col-md-12">
+          <h4>Solution#1 to Problem 1</h4>
+        </div>
+
+        <div class="col-md-12">
+          <pre>
+          function largestOfFour(arr) { <br />
+            let largest_arr = []; <br />
+            for(let i=0;i<4;i++){<br />
+            largest_arr.push(Math.max(...arr[i])); <br />
+          }<br />
+          <br />
+            return largest_arr;<br />
+          }<br />
+          <br />
+          largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21],
+          [-72, -3, -17, -10]]);<br />
+          <br />
+        </pre>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
